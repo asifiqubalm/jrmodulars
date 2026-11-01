@@ -758,6 +758,90 @@ button {
   margin-bottom: 28px;
 }
 
+/* Hero Designer B2B Alert Badge */
+.hero-designer-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(201, 164, 92, 0.14);
+  border: 1px solid var(--accent-gold);
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 20px rgba(201, 164, 92, 0.2);
+}
+
+.pulse-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-gold);
+  box-shadow: 0 0 10px var(--accent-gold);
+  animation: pulseGold 1.8s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulseGold {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 164, 92, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(201, 164, 92, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 164, 92, 0); }
+}
+
+.designer-alert-text {
+  font-size: 0.78125rem;
+  letter-spacing: 0.05em;
+  color: var(--text-main);
+}
+
+.designer-alert-text strong {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+/* Material Checklist in Hero */
+.hero-material-checklist {
+  background: rgba(14, 14, 14, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 20px;
+  border-radius: 2px;
+  margin-bottom: 28px;
+  max-width: 720px;
+}
+
+.checklist-title {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.checklist-items {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.checklist-items span {
+  font-size: 0.75rem;
+  color: #DDD8CE;
+  font-weight: 500;
+}
+
+.gold-chip {
+  background: rgba(201, 164, 92, 0.15) !important;
+  border-color: rgba(201, 164, 92, 0.35) !important;
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+}
+
+.featured-trade-card {
+  border-color: rgba(201, 164, 92, 0.5) !important;
+  background: rgba(32, 26, 18, 0.9) !important;
+  box-shadow: 0 8px 30px rgba(201, 164, 92, 0.18) !important;
+}
+
 /* Hero Dual Audience Quick-Access Cards */
 .hero-dual-cards {
   display: grid;
