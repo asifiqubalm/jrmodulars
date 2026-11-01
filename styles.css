@@ -331,6 +331,26 @@ button {
   color: var(--accent-gold);
 }
 
+/* Top Bar Social Icons */
+.top-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9E998F;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.top-social-link:hover {
+  color: var(--accent-gold);
+  transform: translateY(-1px);
+}
+
 /* --------------------------------------------------------------------------
    SECTION 1 — PREMIUM NAVBAR
    -------------------------------------------------------------------------- */
@@ -641,6 +661,51 @@ button {
   color: var(--accent-gold);
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+/* Mobile Drawer Social Links */
+.mobile-social-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+  margin-top: 8px;
+}
+
+.mobile-social-title {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mobile-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 10px;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.mobile-social-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.mobile-social-btn svg {
+  color: var(--accent-gold);
 }
 
 /* --------------------------------------------------------------------------
@@ -2043,6 +2108,54 @@ button {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
 }
 
+/* Contact Card Social Icons */
+.contact-social-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.social-box-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.contact-social-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.contact-social-pill:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(201, 164, 92, 0.06);
+  transform: translateY(-2px);
+}
+
+.contact-social-pill svg {
+  color: var(--accent-gold);
+}
+
 /* Column 2: Consultation Form */
 .contact-form-container {
   background-color: var(--bg-primary);
@@ -2331,6 +2444,54 @@ button {
 }
 
 .footer-pill svg {
+  color: var(--accent-gold);
+}
+
+/* Footer Social Links */
+.footer-social-row {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-social-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #B2ADA2;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.footer-social-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(201, 164, 92, 0.08);
+  transform: translateY(-2px);
+}
+
+.footer-social-btn svg {
   color: var(--accent-gold);
 }
 
