@@ -1190,6 +1190,230 @@ button {
 }
 
 /* --------------------------------------------------------------------------
+   SECTION 4B — COMPLETE MODULAR SUPPLY FOR INTERIOR DESIGNERS & CONTRACTORS
+   -------------------------------------------------------------------------- */
+.designer-supply-section {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.supply-workflow-ribbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 30px 40px;
+  border-radius: 2px;
+  margin-bottom: 56px;
+  gap: 24px;
+}
+
+.workflow-ribbon-col {
+  flex: 1;
+}
+
+.ribbon-step-num {
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ribbon-step-title {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.ribbon-step-desc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.workflow-ribbon-arrow {
+  color: var(--accent-gold);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.supply-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 56px;
+}
+
+.supply-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 36px 30px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.supply-card:hover {
+  border-color: var(--accent-gold-hairline);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.supply-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.supply-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
+  background: rgba(201, 164, 92, 0.1);
+  border: 1px solid var(--accent-gold-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.supply-badge {
+  font-size: 0.6875rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.supply-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.supply-intro {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.supply-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.supply-list li {
+  font-size: 0.8125rem;
+  color: #c9c5bc;
+  line-height: 1.55;
+  position: relative;
+  padding-left: 16px;
+}
+
+.supply-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-gold);
+  font-size: 1rem;
+  top: -1px;
+}
+
+.supply-list strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.supply-card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 22px;
+}
+
+.designer-trade-cta-banner {
+  background: linear-gradient(135deg, rgba(28, 24, 18, 0.9), rgba(17, 17, 17, 0.95));
+  border: 1px solid var(--accent-gold-hairline);
+  padding: 44px 48px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: var(--shadow-card);
+}
+
+.trade-cta-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.trade-cta-content h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 2.6vw, 2.3rem);
+  color: var(--text-main);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.trade-cta-content p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.68;
+  max-width: 660px;
+  margin-bottom: 20px;
+}
+
+.trade-perks-row {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.trade-perk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--text-main);
+}
+
+.trade-perk svg {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.trade-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 260px;
+}
+
+/* --------------------------------------------------------------------------
    SECTION 5 — FEATURED INTERIOR GALLERY
    -------------------------------------------------------------------------- */
 .gallery-section {
@@ -2557,6 +2781,9 @@ button {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .supply-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2593,6 +2820,17 @@ button {
   .custom-banner-text p {
     margin: 0 auto;
   }
+  .designer-trade-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 28px;
+  }
+  .trade-perks-row {
+    justify-content: center;
+  }
+  .trade-cta-actions {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2623,6 +2861,21 @@ button {
   
   .services-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .supply-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .supply-workflow-ribbon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px 20px;
+  }
+
+  .workflow-ribbon-arrow {
+    transform: rotate(90deg);
   }
   
   .gallery-grid {
