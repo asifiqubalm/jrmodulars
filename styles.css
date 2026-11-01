@@ -754,8 +754,110 @@ button {
   color: #D3CEC4;
   font-weight: 400;
   line-height: 1.7;
-  max-width: 640px;
-  margin-bottom: 36px;
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+/* Hero Dual Audience Quick-Access Cards */
+.hero-dual-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 34px;
+  max-width: 720px;
+}
+
+.hero-dual-card {
+  background: rgba(20, 20, 20, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.hero-dual-card:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-3px);
+  background: rgba(25, 25, 25, 0.95);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+.dual-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.dual-card-badge {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+}
+
+.dual-card-arrow {
+  color: var(--accent-gold);
+  transition: transform 0.3s ease;
+}
+
+.hero-dual-card:hover .dual-card-arrow {
+  transform: translateX(4px);
+}
+
+.dual-card-title {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.dual-card-desc {
+  font-size: 0.8125rem;
+  color: #b5b0a5;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.dual-card-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.dual-card-chips span {
+  font-size: 0.6875rem;
+  padding: 2px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  color: #c0bbb0;
+}
+
+.hero-dual-card.dual-card-trade {
+  background: rgba(28, 23, 17, 0.85);
+  border: 1px solid rgba(201, 164, 92, 0.3);
+}
+
+.hero-dual-card.dual-card-trade:hover {
+  border-color: var(--accent-gold-light);
+  box-shadow: 0 10px 30px rgba(201, 164, 92, 0.2);
+}
+
+.dual-card-badge.trade-badge {
+  color: #E5C784;
+}
+
+.dual-card-arrow.trade-arrow {
+  color: #E5C784;
 }
 
 .hero-cta-group {
@@ -2857,6 +2959,11 @@ button {
   
   .menu-toggle {
     display: flex;
+  }
+
+  .hero-dual-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   
   .services-grid {
